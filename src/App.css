@@ -1,42 +1,99 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Great+Vibes&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: 'Antic Didone', serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.Intro{
+    @apply w-full h-screen flex flex-col justify-center items-center text-center ;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Intro h1{
+    font-size: 8rem;
+    line-height: 8rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.DownloadBtn{
+    @apply bg-black text-white rounded-lg h-12 w-28 transition ;
+}
+.DownloadBtn:hover{
+    @apply border-black border-2 text-black bg-white;
 }
 
-.card {
-  padding: 2em;
+.MenuItems{
+    @apply flex justify-around items-center gap-6 font-bold relative ;
+}
+.MenuItems li {
+    position: relative;
+}
+.MenuItems li a::after{
+    content: " ";
+    position:  absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: black;
+    transition: .5s;
 }
 
-.read-the-docs {
-  color: #888;
+.MenuItems li a:hover:after{
+    width: 100%;
+}
+
+.ProjectSection{
+    @apply w-8/12 h-full border rounded-lg cursor-pointer relative  ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    overflow: auto;
+}
+.ProjectSection > span{
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 , .3);
+    transition: .4s;
+}
+.ProjectSection:hover > span{
+   height: 100%;
+}
+
+.ProjectsItems{
+    @apply w-full h-full text-center py-1 cursor-pointer ;
+}
+
+.ProjectsItems::after{
+    @apply rounded-lg;
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: -1;
+    
+}
+
+.ProjectsItems:hover:after , .ProjectsItems.active:after {
+   width: 100%;
+}
+
+.ProjectsItems:hover ,  .ProjectsItems.active{
+   color: white;
+}
+
+.Thanks{
+    font-size: 3rem;
+    font-family: 'Great Vibes', cursive;
+
 }
