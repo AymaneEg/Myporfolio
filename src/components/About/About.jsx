@@ -3,9 +3,9 @@ import React from 'react'
 export default function 
 () {
   return (
-    <div className='w-full h-screen flex justify-between px-12'>
-        <div className='w-4/12 h-72 bg-red-300'>
-
+    <div className='w-full h-4/6 flex justify-between  px-28 py-8 '> 
+      
+        <div className='w-4/12 h-96 border rounded-lg shadow-sm'>
         </div>
         <div className='w-6/12'>
             <p>
@@ -15,3 +15,4 @@ export default function
     </div>
   )
 }
+

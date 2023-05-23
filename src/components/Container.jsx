@@ -4,6 +4,8 @@ import 'boxicons'
 import About from './About/About'
 import Projects from './projects/projects'
 import Footer from './Footer/Footer'
+import Skills from './skills/skiils'
+import Contact from './contact/Contact'
 
 export default function Container() {
   return (
@@ -23,9 +25,12 @@ export default function Container() {
             </div>
         </div> 
 
-        {/* <About/> */}
+        <About/>
+        <Skills/>
         <Projects/>
-        <Footer/>
+
+         <Contact/>
+        {/* <Footer/> */}
     </div>
   )
 }

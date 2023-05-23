@@ -96,4 +96,30 @@ body{
     font-size: 3rem;
     font-family: 'Great Vibes', cursive;
 
+} 
+
+.ContactDiv{
+    @apply border h-20 flex justify-center items-center px-4 rounded-full cursor-pointer relative overflow-hidden;
+}
+
+.ContactDiv::after{
+  content: "Copy to clipborad";
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  height: 150%;
+  background-color: #455ce9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: .2s;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  padding-bottom: 18% ;
+
+}
+.ContactDiv:hover:after{
+  transform: translateY(-20%);
 }
