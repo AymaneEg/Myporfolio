@@ -8,11 +8,12 @@ import reactImg from '../../assets/react.svg'
 
 export default function Skills() {
   return (
-    <div className='w-full h-screen flex flex-col items-center px-8 py-4 bg-customBlack text-gray-200 justify-center '>
-       <h1 className='text-4xl '>What I do ?</h1> 
-       <div className='w-full flex gap-16 p-8'>
+    <div className='w-full min-h-screen flex flex-col items-center px-8 py-4 bg-customBlack text-gray-200 justify-center '>
+       <h1 className='text-4xl '>What I do ?</h1>  
 
-          <div className='w-4/12'>
+       <div className='w-full flex flex-col lg:flex-row justify-center gap-8 lg:gap-32 p-8'>
+
+          <div className='w-full lg:w-2/12'>
              <div className='w-full border-b-2 '>
                  <h1 className='text-xl'>01</h1>
              </div>
@@ -21,7 +22,7 @@ export default function Skills() {
              </div>
           </div>
           
-          <div className='w-4/12'>
+          <div className='w-full lg:w-2/12'>
              <div className='w-full border-b-2 '>
                  <h1 className='text-xl'>02</h1>
              </div>
@@ -30,7 +31,7 @@ export default function Skills() {
              </div>
           </div>
 
-          <div className='w-4/12'>
+          <div className='w-full lg:w-2/12'>
              <div className='w-full border-b-2 '>
                  <h1 className='text-xl'>03</h1>
              </div>
@@ -41,9 +42,9 @@ export default function Skills() {
        </div>
         
 
-       <div className='w-full flex gap-16 p-8'>
+       <div className='w-full flex flex-col lg:flex-row gap-8 lg:gap-32 p-8 justify-center '>
 
-<div className='w-4/12'>
+<div className=' w-full lg:w-2/12'>
    <div className='w-full border-b-2 '>
        <h1 className='text-xl'>04</h1>
    </div>
@@ -52,7 +53,7 @@ export default function Skills() {
    </div>
 </div>
 
-<div className='w-4/12'>
+<div className='w-full lg:w-2/12'>
    <div className='w-full border-b-2 '>
        <h1 className='text-xl'>05</h1>
    </div>
@@ -61,7 +62,7 @@ export default function Skills() {
    </div>
 </div>
 
-<div className='w-4/12'>
+<div className='w-full lg:w-2/12'>
    <div className='w-full border-b-2 '>
        <h1 className='text-xl'>06</h1>
    </div>
@@ -71,9 +72,9 @@ export default function Skills() {
 </div>         
 </div>
 
-<div className='w-full flex gap-16 p-8'>
+<div className='w-full flex flex-col lg:flex-row gap-8 lg:gap-32 p-8 justify-center '>
 
-<div className='w-4/12'>
+<div className='w-full lg:w-2/12'>
    <div className='w-full border-b-2 '>
        <h1 className='text-xl'>07</h1>
    </div>
@@ -82,7 +83,7 @@ export default function Skills() {
    </div>
 </div>
 
-<div className='w-4/12'>
+<div className='w-full lg:w-2/12'>
    <div className='w-full border-b-2 '>
        <h1 className='text-xl'>08</h1>
    </div>
@@ -91,7 +92,7 @@ export default function Skills() {
    </div>
 </div>
 
-<div className='w-4/12'>
+<div className='w-full lg:w-2/12'>
    <div className='w-full border-b-2 '>
        <h1 className='text-xl'>09</h1>
    </div>
