@@ -3,10 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Antic Didone', serif;
-    scroll-behavior: smooth;
 }
 
 .Intro{
@@ -130,7 +132,6 @@ body{
     transition: .4s;
     transform: translateX(100%)
 } 
-
 .ProjectSection > span button:nth-child(2)::after    {
     content:' ';
     position: absolute;
@@ -191,7 +192,7 @@ body{
 } 
 
 .ContactDiv{
-    @apply border h-20 flex justify-center items-center px-4 rounded-full cursor-pointer relative overflow-hidden;
+    @apply border-2 h-20 flex justify-center items-center px-4 rounded-full cursor-pointer relative overflow-hidden;
 }
 
 .ContactDiv::after{

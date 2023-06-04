@@ -1,7 +1,10 @@
 import React, { useEffect, useLayoutEffect, useReducer, useRef, useState } from 'react'
 import comments from './images/CommentsSection.png' 
 import fylo from './images/Fylo.png' 
-import ProductPage from './images/productPage.png' 
+// import MultiStepsForm from './images/MultiStepsForm.png' 
+import Shortly from './images/Shortly.png' 
+import Signin from './images/SigninPage.png' 
+import MultiSteps from './images/MultiStepsForm.png' 
 
 const ACTIONS = {
     INCREMENT : "INCREMENT" , 
@@ -15,19 +18,19 @@ const ProjectDetails = {
     } ,
     UrlShorting : {
         name : "UrlShorting" ,
-        image : comments
+        image : Shortly
     } ,
-    ProductPage : {
-        name : "ProductPage" ,
-        image : ProductPage
+    MultiStepsForm : {
+        name : "MultiStepsForm" ,
+        image : MultiSteps
     } ,
     Comments : {
         name : "Comments" ,
         image : comments
     } ,
-    Aznak : {
-        name : "Aznak" ,
-        image : comments
+    SigninPage : {
+        name : "SigninPage" ,
+        image : Signin
     } ,
 } 
 
@@ -74,16 +77,16 @@ export default function Projects() {
          Container.scrollLeft += parseInt(document.getElementById(ProjectDetails.UrlShorting.name).clientLeft)
          break;
        case 2 : 
-         SetSelectedProject(ProjectDetails.ProductPage)
-         Container.scrollLeft += document.getElementById(ProjectDetails.ProductPage.name).clientLeft
+         SetSelectedProject(ProjectDetails.MultiStepsForm)
+         Container.scrollLeft += document.getElementById(ProjectDetails.MultiStepsForm.name).clientLeft
          break;
        case 3 : 
          SetSelectedProject(ProjectDetails.Comments)
          Container.scrollLeft += document.getElementById(ProjectDetails.Comments.name).clientLeft
          break;
        case 4 : 
-         SetSelectedProject(ProjectDetails.Aznak)
-         Container.scrollLeft += document.getElementById(ProjectDetails.Aznak.name).clientLeft
+         SetSelectedProject(ProjectDetails.SigninPage)
+         Container.scrollLeft += document.getElementById(ProjectDetails.SigninPage.name).clientLeft
          break;
      }
   } , [scrolledIndex.index] )
@@ -106,14 +109,14 @@ export default function Projects() {
                   <li id={ProjectDetails.UrlShorting.name} className='w-full lg:w-8/12 flex justify-center items-center relative'>
                     <span className={selectedProject == ProjectDetails.UrlShorting ? "ProjectsItems active" : "ProjectsItems"} onClick={()=> SetSelectedProject(ProjectDetails.UrlShorting)}>Url Shorting Api</span>
                   </li>
-                  <li id={ProjectDetails.ProductPage.name} className='w-full lg:w-8/12 flex justify-center items-center relative'>
-                    <span className={selectedProject == ProjectDetails.ProductPage ? "ProjectsItems active" : "ProjectsItems"} onClick={()=> SetSelectedProject(ProjectDetails.ProductPage)}>Product Page</span>
+                  <li id={ProjectDetails.MultiStepsForm.name} className='w-full lg:w-8/12 flex justify-center items-center relative'>
+                    <span className={selectedProject == ProjectDetails.MultiStepsForm ? "ProjectsItems active" : "ProjectsItems"} onClick={()=> SetSelectedProject(ProjectDetails.MultiStepsForm)}>Multi steps form</span>
                     </li>
                   <li id={ProjectDetails.Comments.name} className='w-full lg:w-8/12 flex justify-center items-center relative'>
                     <span className={selectedProject == ProjectDetails.Comments ? "ProjectsItems active" : "ProjectsItems"} onClick={()=> SetSelectedProject(ProjectDetails.Comments)}>Comments Section</span>
                     </li>
-                  <li id={ProjectDetails.Aznak.name} className='w-full lg:w-8/12 flex justify-center items-center relative'>
-                    <span className={selectedProject == ProjectDetails.Aznak ? "ProjectsItems active" : "ProjectsItems"} onClick={()=> SetSelectedProject(ProjectDetails.Aznak)}>Aznak Gym</span>
+                  <li id={ProjectDetails.SigninPage.name} className='w-full lg:w-8/12 flex justify-center items-center relative'>
+                    <span className={selectedProject == ProjectDetails.SigninPage ? "ProjectsItems active" : "ProjectsItems"} onClick={()=> SetSelectedProject(ProjectDetails.SigninPage)}>Sign in</span>
                   </li>
                    
 

@@ -4,7 +4,7 @@ import wave from './goodbye.png'
 export default function 
 () {
   return (
-    <div className='w-full min-h-4/6 flex flex-col items-center gap-10 lg:flex-row justify-between  lg:px-28 py-8 '> 
+    <div className='w-full min-h-4/6 flex flex-col items-center gap-10 lg:flex-row justify-between  lg:px-28 py-8 ' id='About'> 
       
         <div className='AboutPicture' style={{backgroundImage : `url(${myimage})`}}>
         </div>

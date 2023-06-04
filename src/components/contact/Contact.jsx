@@ -2,7 +2,7 @@ import React from 'react'
 import img from './myimg.jpeg'
 export default function () {
   return (
-    <div className='w-full min-h-screen flex-col justify-center items-center py-8  flex  bg-customBlack  text-white text-center'>
+    <div className='w-full min-h-screen flex-col justify-center items-center py-8  flex  bg-customBlack  text-white text-center' id='Contact'>
         <div className='w-8/12 h-1/2 flex justify-start items-end border-b border-gray-100 pb-8'>
             <div className='flex flex-col justify-start'>
                 <div className='flex flex-col lg:flex-row items-center gap-4' >

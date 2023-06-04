@@ -21,15 +21,15 @@ export default function Menu() {
   return (
      <div className='w-full fixed bg-white z-20 top-0 left-0  h-20 flex justify-between items-center px-8 lg:px-20 '>
         <div>
-            <h1 className='text-xl cursor-pointer'>Aymane <span className='font-bold'>{`</>`}</span></h1>
+            <h1 className='text-xl cursor-pointer transition-all hover:font-bold' onClick={()=> scroll('Intro')}>Aymane <span className='font-bold'>{`</>`}</span></h1>
         </div>
 
         <div className={openMenu ? 'MenuContainer active' : 'MenuContainer'} >
             <ul className='MenuItems'>
-                <li>About</li>
-                <li> Skills</li>
+                <li onClick={()=> scroll('About')}>About</li>
+                <li onClick={()=> scroll('Skills')}> Skills</li>
                 <li onClick={()=> scroll('ProjectsContainer')}> Projects</li>
-                <li>Contact</li>
+                <li onClick={()=> scroll('Contact')}>Contact</li>
                 <button className='DownloadBtn' onClick={()=> console.log('dd')}>Download cv</button>
             </ul>
 

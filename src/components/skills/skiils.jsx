@@ -8,7 +8,7 @@ import reactImg from '../../assets/react.svg'
 
 export default function Skills() {
   return (
-    <div className='w-full min-h-screen flex flex-col items-center px-8 py-4 bg-customBlack text-gray-200 justify-center '>
+    <div className='w-full min-h-screen flex flex-col items-center px-8 py-4 bg-customBlack text-gray-200 justify-center ' id='Skills'>
        <h1 className='text-4xl '>What I do ?</h1>  
 
        <div className='w-full flex flex-col lg:flex-row justify-center gap-8 lg:gap-32 p-8'>

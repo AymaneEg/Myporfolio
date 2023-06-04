@@ -33,7 +33,7 @@ export default function Container() {
 
     <div className='w-full scroll-smooth '>
         <Menu/>
-        <div className='Intro'>
+        <div className='Intro' id='Intro'>
             <p>Front-end Developer</p>
            <h1> Aymane <br/> El Guanouni</h1>
             <div className='flex justify-between items-center gap-4 mt-8'>
@@ -41,7 +41,7 @@ export default function Container() {
               <p>Tangier , Morocco</p>
             </div>
 
-            <div className='w-28 h-12 absolute bottom-8 border flex justify-center items-center rounded-lg border-black'>
+            <div className='w-28 h-12 absolute bottom-8 border flex flex-col justify-center items-center rounded-lg border-black'>
                 See More.
             </div>
         </div> 
@@ -49,8 +49,7 @@ export default function Container() {
         <About/>
         <Skills/>
         <Projects/>
-
-         <Contact/>
+        <Contact/>
         <Footer/>
 
      
