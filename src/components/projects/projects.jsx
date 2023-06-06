@@ -147,7 +147,7 @@ export default function Projects() {
               
             </div>
          </div>
-         <h1 className='text-3xl text-center p-8'>More thinks are beign made , stay tuned ...</h1>
+         <h1 className='text-3xl text-center p-8'>More thinks are being made , stay tuned ...</h1>
 
      </div>
   )

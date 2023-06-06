@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import cv from './ElGuanouniAymane.pdf'
 
 export default function Menu() {
 
@@ -30,7 +30,9 @@ export default function Menu() {
                 <li onClick={()=> scroll('Skills')}> Skills</li>
                 <li onClick={()=> scroll('ProjectsContainer')}> Projects</li>
                 <li onClick={()=> scroll('Contact')}>Contact</li>
-                <button className='DownloadBtn' onClick={()=> console.log('dd')}>Download cv</button>
+                <a href={cv} >
+                  <button className='DownloadBtn' onClick={()=> console.log('dd')}>Download cv</button>
+                </a>
             </ul>
 
             <div className='absolute top-8 right-8 cursor-pointer ' style={{display : openMenu ? "flex" : "none"}} onClick={()=>setOpenMenu(false)}>
