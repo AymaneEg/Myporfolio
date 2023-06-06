@@ -14,23 +14,33 @@ const ACTIONS = {
 const ProjectDetails = {
     Fylo : {
         name : "Fylo" ,
-        image : fylo ,
+        image : fylo , 
+        liveDemo : "https://aymaneeg.github.io/FyloUpdated/" ,
+        github : "https://github.com/AymaneEg/FyloUpdated"
     } ,
     UrlShorting : {
         name : "UrlShorting" ,
-        image : Shortly
+        image : Shortly , 
+        liveDemo : "https://aymaneeg.github.io/ShortlyUpdated/" ,
+        github : "https://github.com/AymaneEg/ShortlyUpdated"
     } ,
     MultiStepsForm : {
         name : "MultiStepsForm" ,
-        image : MultiSteps
+        image : MultiSteps , 
+        liveDemo : "https://aymaneeg.github.io/multiStepsForm/" ,
+        github : "https://github.com/AymaneEg/multiStepsForm"
     } ,
     Comments : {
         name : "Comments" ,
-        image : comments
+        image : comments , 
+        liveDemo : "https://aymaneeg.github.io/CommentsSection/" ,
+        github : "https://github.com/AymaneEg/CommentsSection"
     } ,
     SigninPage : {
         name : "SigninPage" ,
-        image : Signin
+        image : Signin , 
+        liveDemo : "https://aymaneeg.github.io/FyloUpdated/" ,
+        github : "https://github.com/AymaneEg/FyloUpdated"
     } ,
 } 
 
@@ -126,8 +136,13 @@ export default function Projects() {
             </div>
             <div className='ProjectSection' style={{backgroundImage : `url(${selectedProject.image})`}}> 
               <span>
-                 <button className='w-3/12 h-12 rounded-lg transition-all m-4 relative overflow-hidden font-bold bg-white' >Live Demo</button>
-                 <button className='w-3/12 h-12 rounded-lg transition-all m-4 relative overflow-hidden font-bold bg-customBlack text-white'  >GitHub link</button>
+                <a href={selectedProject.liveDemo} className='w-3/12 h-12 m-4'>
+                 <button className='w-full h-full rounded-lg transition-all  relative overflow-hidden font-bold bg-white' >Live Demo</button>
+                </a>
+
+                <a href={selectedProject.github} className='w-3/12 h-12 m-4'>
+                 <button className='w-full h-full rounded-lg transition-all  relative overflow-hidden font-bold bg-customBlack text-white'  >GitHub link</button>
+                </a>
               </span>
               
             </div>
