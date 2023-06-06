@@ -39,8 +39,8 @@ const ProjectDetails = {
     SigninPage : {
         name : "SigninPage" ,
         image : Signin , 
-        liveDemo : "https://aymaneeg.github.io/FyloUpdated/" ,
-        github : "https://github.com/AymaneEg/FyloUpdated"
+        liveDemo : "https://aymaneeg.github.io/SignInPage/" ,
+        github : "https://github.com/AymaneEg/SignInPage"
     } ,
 } 
 
